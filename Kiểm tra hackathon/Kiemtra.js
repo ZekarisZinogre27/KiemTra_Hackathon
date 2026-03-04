@@ -49,7 +49,6 @@ let studentList = [
 function newStudent() {
     let studentId = Number(prompt("Nhập Id để thêm sinh viên vào danh sách:"));
 
-    // kiểm tra id trùng
     let exist = studentList.find(student => student.id === studentId);
     if (exist) {
         console.log("Id đã tồn tại. Vui lòng chọn id khác.");
@@ -113,7 +112,6 @@ function studentStatusList() {
 }
 
 function updateStudent() {
-    // chưa làm theo yêu cầu của bạn
 }
 
 function findById() {
@@ -197,4 +195,5 @@ do {
             alert("Lựa chọn của bạn không hợp lệ!");
             break;
     }
+
 } while (choose !== 0);
